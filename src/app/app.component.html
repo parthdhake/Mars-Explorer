@@ -1,3 +1,8 @@
+<div id="progress" *ngIf="state" >
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+
 <div class="heading">
   <header>
     Mars Rover Photos
@@ -6,21 +11,21 @@
 <div class="toggle">
   <mat-form-field appearance="fill"  style="padding-right: 10px; padding-left: 10px; color: blanchedalmond">
     <mat-label>Rover</mat-label>
-    <mat-select (click)="getPhotos()" [(ngModel)]="currentRover">
+    <mat-select [(ngModel)]="currentRover">
       <mat-option [value]="j.key" *ngFor="let j of cameras | keyvalue">{{ j.key }}</mat-option>
     </mat-select>
   </mat-form-field>
 
   <mat-form-field appearance="fill" style="padding-right: 10px; padding-left: 10px; color: blanchedalmond">
     <mat-label>Camera</mat-label>
-    <mat-select (click)="getPhotos()" [(ngModel)]="currentCamera">
+    <mat-select [(ngModel)]="currentCamera">
       <mat-option [value]="c.value" *ngFor="let c of cameras[currentRover] | keyvalue">{{ c.value }}</mat-option>
     </mat-select>
   </mat-form-field>
 
   <mat-form-field appearance="fill" style="padding-right: 10px; padding-left: 10px; color: blanchedalmond">
     <mat-label>Sol</mat-label>
-    <input type="number" matInput [(ngModel)]="sol" (click)="getPhotos()">
+    <input type="number" matInput [(ngModel)]="sol">
   </mat-form-field>
 </div>
 
@@ -28,7 +33,7 @@
   <button mat-fab (click)="getPhotos()">Apply</button>
 </div>
 
-<div class="photos">
+<div class="photos" *ngIf="!state">
   <mat-card *ngFor="let p of photos">
     <img mat-card-image (click)="showFullImage(p)" src="{{ p['img_src'] }}" title="Click for see full size image">
     <mat-card-content> <b>Date:</b> {{ p['earth_date'] }}</mat-card-content>

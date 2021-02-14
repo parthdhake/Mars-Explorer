@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 
 
@@ -23,6 +25,7 @@ import { MatCardModule } from '@angular/material/card';
     FormsModule,
     AppRoutingModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
     MatCardModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
