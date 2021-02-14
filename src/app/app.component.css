@@ -1,0 +1,39 @@
+.heading{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    background-color: #1e1e1e;
+    color: rosybrown;
+}
+
+.send {
+    text-align: center;
+}
+.toggle {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.photos {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+mat-card{
+    width: 20%;
+    margin: 25px;
+    display: inline-block;
+}
+
+mat-label{
+    color: blanchedalmond;
+    outline-color: green;
+}
+
+span.mat-select-min-line.ng-tns-c77-1.ng-star-inserted {
+    color: white;
+}
