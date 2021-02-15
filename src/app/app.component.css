@@ -16,6 +16,15 @@
     transform: translate(-50%, -50%);
 }
 
+#data_avail {
+    position: fixed;
+    font-size: xx-large;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .send {
     text-align: center;
 }
