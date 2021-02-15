@@ -8,3 +8,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-select-value {
     color: rgb(255, 255, 255);
 }
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background-color:white;
+}
+
+.mat-select-arrow {
+    color: white;
+}
+
