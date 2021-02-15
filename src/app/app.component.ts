@@ -16,19 +16,24 @@ export class AppComponent {
   };
  
   photos: Object[];
-  sol: number = 1000;
+  sol: number = 999;
   currentRover: string;
   currentCamera: string;
+  state: Boolean;
+
 
   showFullImage(p){
     window.open(p['img_src']);
   }
 
   async getPhotos(){
-    
+
+    this.state = true;
+
     if(this.currentRover && this.currentCamera){
       let promise = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${this.currentRover.toLowerCase()}/photos?sol=${this.sol}&camera=${this.currentCamera.toLowerCase()}&api_key=uCQ0ibUlWh83iBkeRvlM8oBdZ7AkCa7JHQjlxBzo`);
       let data = await promise.json();
+      this.state = false;
       this.photos = data['photos'];
     }
   }
