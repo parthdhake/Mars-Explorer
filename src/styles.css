@@ -5,9 +5,6 @@ html{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-span.mat-select-min-line.ng-tns-c77-1.ng-star-inserted {
-  color: white;
-}
-span.mat-select-min-line.ng-tns-c77-3.ng-star-inserted {
-  color: white;
+.mat-select-value {
+    color: rgb(255, 255, 255);
 }
