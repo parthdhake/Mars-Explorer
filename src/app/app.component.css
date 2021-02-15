@@ -39,6 +39,8 @@
     text-align: center;
 }
 
+
+
 mat-card{
     width: 20%;
     margin: 25px;
@@ -52,4 +54,12 @@ mat-label{
 
 span.mat-select-min-line.ng-tns-c77-1.ng-star-inserted {
     color: turquoise;
+}
+
+@media (max-width: 768px){
+
+    mat-card {
+        width: 75%;
+    }
+
 }
