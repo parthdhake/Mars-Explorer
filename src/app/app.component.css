@@ -62,4 +62,22 @@ span.mat-select-min-line.ng-tns-c77-1.ng-star-inserted {
         width: 75%;
     }
 
+    #progress {
+        position: fixed;
+        width: 65%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-19%, -50%);
+    }
+
+    #data_avail {
+    position: fixed;
+    font-size: xx-large;
+    color: white;
+    left: 50%;
+    width: 62%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+
 }
